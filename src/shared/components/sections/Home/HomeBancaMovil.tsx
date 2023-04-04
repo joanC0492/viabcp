@@ -2,7 +2,7 @@ import { ButtonBcp } from "../../UI";
 
 export const HomeBancaMovil = () => {
   return (
-    <section className="bg-[url('/img/home/banner-pre-footer.png')] bg-cover bg-no-repeat bg-center h-[460px] pt-32">
+    <section className="bg-[url('./img/home/banner-pre-footer.png')] bg-cover bg-no-repeat bg-center h-[460px] pt-32">
       <div className="container h-full">
         <div className="grid grid-cols-12 h-full">
           <div className="col-span-6 self-end pb-10">
