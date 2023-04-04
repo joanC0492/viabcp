@@ -9,7 +9,7 @@ export const NavBar = () => {
         <div className="flex items-center">
           <div>
             <Link href={"/"}>
-              <img src="/img/logo.svg" alt="Logo BCP" width={108} />
+              <img src="./img/logo.svg" alt="Logo BCP" width={108} />
             </Link>
           </div>
           <nav>
@@ -29,7 +29,7 @@ export const NavBar = () => {
           <div className="ml-auto">
             <ul className="flex items-center gap-4">
               <li className="flex items-center gap-1">
-                <img src="img/icons/icon-agencias.svg" alt="agencias" />
+                <img src="./img/icons/icon-agencias.svg" alt="agencias" />
                 <span>Agencias</span>
               </li>
               <li>Search</li>

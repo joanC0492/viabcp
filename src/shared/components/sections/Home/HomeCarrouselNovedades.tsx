@@ -44,7 +44,7 @@ export const HomeCarrouselNovedades = () => {
                   <div className="col-span-6 relative order-2">
                     <div className="pt-16 max-w-[560px]">
                       <p className="text-bcp-gray-4 flex gap-2">
-                        <img src="/img/icons/cancel-green.svg" alt="Icon" />
+                        <img src="./img/icons/cancel-green.svg" alt="Icon" />
                         <span>{promocion}</span>
                       </p>
                       <p className="text-[40px] leading-[1.1] mb-3 text-bcp-blue-2 mt-5">

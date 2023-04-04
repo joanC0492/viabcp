@@ -20,7 +20,7 @@ export const HomeBancaMovil = () => {
             </div>
           </div>
           <div className="col-span-6 relative">
-            <img src="/img/home/celular-app.png" alt="App" className="absolute left-1/2 bottom-0 -translate-x-1/2"/>
+            <img src="./img/home/celular-app.png" alt="App" className="absolute left-1/2 bottom-0 -translate-x-1/2"/>
           </div>
         </div>
       </div>

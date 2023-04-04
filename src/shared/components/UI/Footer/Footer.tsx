@@ -86,7 +86,7 @@ export const Footer = () => {
         <hr className="my-10" />
         <div className="pb-10 flex items-center gap-12">
           <div>
-            <img src="/img/home/bcp-dark.svg" alt="" />
+            <img src="./img/home/bcp-dark.svg" alt="" />
           </div>
           <div>
             <p className="text-bcp-gray-1/75 text-xs">

@@ -7,7 +7,6 @@ import {
   IhomeLanzamientos,
   IFooterRoute,
   IFooterContacto,
-  IFooterRRss,
 } from "@/interfaces/homeBcp.interface";
 
 export const headerTopRoutes: INavBarRoute[] = [
@@ -57,7 +56,7 @@ export const homeCarrousel: IHomeCarrousel[] = [
     title: "¡Pide un Préstamo Personal y recibe Dinero al Instante!",
     subtitle: "Rápido, seguro, sin papeleos y sin salir de casa",
     cta: "Obténlo aquí",
-    img: "/img/home/banner-home-1.png",
+    img: "./img/home/banner-home-1.png",
   },
   {
     id: 2,
@@ -65,14 +64,14 @@ export const homeCarrousel: IHomeCarrousel[] = [
     subtitle:
       "Desde 7.4 % hasta 8.1 % abriendo tu Depósito a Plazo en tu app Banca Móvil BCP",
     cta: "Obtenlo aquí",
-    img: "/img/home/banner-home-2.png",
+    img: "./img/home/banner-home-2.png",
   },
   {
     id: 3,
     title: "¡Tu Cuenta Premio sortea UN MILLÓN de soles extra!",
     subtitle: "",
     cta: "Participa aquí",
-    img: "/img/home/banner-home-3.png",
+    img: "./img/home/banner-home-3.png",
   },
   {
     id: 4,
@@ -80,41 +79,41 @@ export const homeCarrousel: IHomeCarrousel[] = [
       "Tus compras online en Cuotas sin Intereses multiplican tus Millasx4",
     subtitle: "",
     cta: "Conoce más",
-    img: "/img/home/banner-home-4.png",
+    img: "./img/home/banner-home-4.png",
   },
 ];
 
 export const homeCard: ICardViaBcp[] = [
   {
     id: 1,
-    img: "/img/icons/cuenta.svg",
+    img: "./img/icons/cuenta.svg",
     title: "Abrir una Cuenta",
   },
   {
     id: 2,
-    img: "/img/icons/tarjeta.svg",
+    img: "./img/icons/tarjeta.svg",
     title: "Obtener Tarjeta de Crédito",
     cintillo: "PROMO",
   },
   {
     id: 3,
-    img: "/img/icons/sueldo.svg",
+    img: "./img/icons/sueldo.svg",
     title: "Adelantar mi Sueldo",
   },
   {
     id: 4,
-    img: "/img/icons/prestamo.svg",
+    img: "./img/icons/prestamo.svg",
     title: "Solicitar un Préstamo",
   },
   {
     id: 5,
-    img: "/img/icons/vehicular.svg",
+    img: "./img/icons/vehicular.svg",
     title: "SOAT desde S/42",
     cintillo: "PROMO",
   },
   {
     id: 6,
-    img: "/img/icons/tarjeta+plus.svg",
+    img: "./img/icons/tarjeta+plus.svg",
     title: "Proteger mis Tarjetas",
   },
 ];
@@ -126,7 +125,7 @@ export const homeCarrouselNovedades: IHomeCarrouselNovedades[] = [
     title: "¡Tu Tarjeta de Crédito y Débito Visa BCP te traen la Fija del BCP!",
     text: "Aprovecha todos los lunes de 12 p.m. a 4 p.m. y date un gustito con PedidosYa.",
     cta: "Solicitar aquí",
-    img: "/img/home/carrusel-novedades-01.png",
+    img: "./img/home/carrusel-novedades-01.png",
   },
   {
     id: 2,
@@ -135,7 +134,7 @@ export const homeCarrouselNovedades: IHomeCarrouselNovedades[] = [
       "Invierte en el Fondo CC Cupón Escalonado XXIX y podrías ganar entre 4.35% hasta 4.65% anual*",
     text: "Mira las condiciones aquí",
     cta: "Abre tu fondo aquí",
-    img: "/img/home/carrusel-novedades-02.png",
+    img: "./img/home/carrusel-novedades-02.png",
   },
   {
     id: 3,
@@ -143,7 +142,7 @@ export const homeCarrouselNovedades: IHomeCarrouselNovedades[] = [
     title: "¡Tu Tarjeta de Crédito Visa BCP te devuelve hasta S/250!",
     text: "Por tus compras acumulables desde S/500 del 01 al 30 de abril del 2023",
     cta: "Participa aquí",
-    img: "/img/home/carrusel-novedades-03.png",
+    img: "./img/home/carrusel-novedades-03.png",
   },
   {
     id: 4,
@@ -151,7 +150,7 @@ export const homeCarrouselNovedades: IHomeCarrouselNovedades[] = [
     title: "¡Tu tarjeta de crédito Amex te devuelve hasta S/400!",
     text: "Consume del 01 al 30 de abril con tu Tarjeta de Crédito AMEX y te devolvemos el 10% de lo consumido.",
     cta: "Participa aquí",
-    img: "/img/home/carrusel-novedades-04.png",
+    img: "./img/home/carrusel-novedades-04.png",
   },
   {
     id: 5,
@@ -159,7 +158,7 @@ export const homeCarrouselNovedades: IHomeCarrouselNovedades[] = [
     title: "Compra desde dónde estés con hasta 24 cuotas sin intereses",
     text: "Solo con tu Tarjeta de Crédito BCP",
     cta: "Conoce más",
-    img: "/img/home/carrusel-novedades-05.png",
+    img: "./img/home/carrusel-novedades-05.png",
   },
   {
     id: 6,
@@ -167,56 +166,56 @@ export const homeCarrouselNovedades: IHomeCarrouselNovedades[] = [
     title: "¡Cambia tus dólares y gana S/ 10,000!",
     text: "Cambia por primera vez tus dólares en Banca Móvil BCP y podrás participar en el sorteo de S/ 10,000.",
     cta: "Conoce más",
-    img: "/img/home/carrusel-novedades-06.png",
+    img: "./img/home/carrusel-novedades-06.png",
   },
 ];
 
 export const homeClienteDigital: IhomeClienteDigital[] = [
   {
     id: 1,
-    icon: "/img/icons/escudo-blanco.svg",
+    icon: "./img/icons/escudo-blanco.svg",
     title: "Protege tus contraseñas con BCP",
     text: "Comprueba qué tanto sabes con esta breve encuesta",
     cta: "Empieza aquí",
-    img: "/img/home/microsoft-teams-image.png",
+    img: "./img/home/microsoft-teams-image.png",
   },
   {
     id: 2,
     tag: "NUEVO",
-    icon: "/img/icons/tarjeta-blanca.svg",
+    icon: "./img/icons/tarjeta-blanca.svg",
     title: "Tarjeta de Débito Digital",
     text: "Abre una Cuenta y elige este nuevo tipo de Tarjeta",
     cta: "Conocer más",
-    img: "/img/home/debito.png",
+    img: "./img/home/debito.png",
   },
   {
     id: 3,
-    icon: "/img/icons/clave-blanco.svg",
+    icon: "./img/icons/clave-blanco.svg",
     title: "Crea tu clave de Internet",
     text: "Es una clave de 6 dígitos que sirve para ingresar a Banca Móvil y Banca por Internet",
     cta: "Crear clave",
-    img: "/img/home/password.png",
+    img: "./img/home/password.png",
   },
 ];
 
 export const homeLanzamientos: IhomeLanzamientos[] = [
   {
     id: 1,
-    img: "/img/home/ando-desktop.svg",
+    img: "./img/home/ando-desktop.svg",
     title: "¡Obtén tu Tarjeta de Crédito como jugANDO!",
     text: "Cumple sencillos retos y consíguela en 3 meses",
     cta: "Conocer más",
   },
   {
     id: 2,
-    img: "/img/home/saca-tu-ruc-crece.png",
+    img: "./img/home/saca-tu-ruc-crece.png",
     title: "¡Saca tu RUC 20 con Crece!",
     text: "Constituye tu empresa y haz crecer tu negocio",
     cta: "Conocer más",
   },
   {
     id: 3,
-    img: "/img/home/home-organizate.png",
+    img: "./img/home/home-organizate.png",
     title: "¡Mira en qué y cuánto gastas con Organízate!",
     text: "Conócenos y ten el control de tu dinero YA",
     cta: "Conocer más",
@@ -315,19 +314,19 @@ export const footerRoutes: IFooterRoute[] = [
 export const footerContacto: IFooterContacto[] = [
   {
     id: 1,
-    icon: "/img/icons/icon-whatsapp.svg",
+    icon: "./img/icons/icon-whatsapp.svg",
     title: "99 311 9898",
     link: "",
   },
   {
     id: 2,
-    icon: "/img/icons/icon-world.svg",
+    icon: "./img/icons/icon-world.svg",
     title: "Chatea con un asesor",
     link: "",
   },
   {
     id: 3,
-    icon: "/img/icons/icon-mail.svg",
+    icon: "./img/icons/icon-mail.svg",
     title: "Escríbenos",
     link: "",
   },

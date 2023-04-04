@@ -29,7 +29,7 @@ export const HomeNecesidades = ({ referencia }: IProps) => {
         </div>
         <div className="text-center py-12">
           <button onClick={handleClick}>
-            <img src="/img/icons/arrow-down.svg" alt="arrow icon" />
+            <img src="./img/icons/arrow-down.svg" alt="arrow icon" />
           </button>
         </div>
       </div>
