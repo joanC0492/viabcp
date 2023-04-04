@@ -1,0 +1,7 @@
+/* .swiper-pagination-bullet .swiper-pagination-bullet-active svg {
+  fill: rgb(0, 122, 255);
+} */
+
+.swiper-pagination-bullet-active.swiper--dots svg {
+  fill: rgb(0, 122, 255);
+}

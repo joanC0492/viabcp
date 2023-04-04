@@ -1,0 +1,57 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flexo-regular {
+    @apply font-flexo font-normal not-italic;
+  }
+  .flexo-medium {
+    @apply font-flexo font-medium not-italic;
+  }
+  .flexo-mediumit {
+    @apply font-flexo font-medium italic;
+  }
+  .flexo-bold {
+    @apply font-flexo font-bold not-italic;
+  }
+  .flexo-boldit {
+    @apply font-flexo font-bold italic;
+  }
+  .flexo-heavy {
+    @apply font-flexo font-black not-italic;
+  }
+}
+
+@layer utilities {
+  .content-auto {
+    /* @apply bg-bcp-blue-1 */
+  }
+}
+
+html {
+  scroll-padding: 93.31px;
+}
+
+[class*="swiper-bcp-home"] .swiper-pagination-bullet {
+  position: relative;
+}
+[class*="swiper-bcp-home"] .swiper-pagination-bullet-active {
+  background: transparent;
+}
+[class*="swiper-bcp-home"] .swiper-pagination-bullet-active svg {
+  --progress: 0;
+  position: absolute;
+  left: -16px;
+  top: -16px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  stroke-width: 4px;
+  stroke: #002da0;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
