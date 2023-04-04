@@ -17,7 +17,7 @@ export const Footer = () => {
           <Tooltip title="Volver a arriba">
             <img
               onClick={handleClick}
-              src="/img/icons/arrow-top.svg"
+              src="./img/icons/arrow-top.svg"
               alt="Arrow Top"
               className="absolute right-[calc(50%-28px-28px)] top-0 -translate-x-1/2 -translate-y-1/2 cursor-pointer px-7 bg-white"
             />

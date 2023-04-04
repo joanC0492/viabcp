@@ -38,7 +38,7 @@ export const NavBar = () => {
                   title="Abre tu cuenta"
                   className="h-[40px] font-semibold text-sm"
                   icon={{
-                    name: "/img/icons/icon-money-bag-soles-r.svg",
+                    name: "./img/icons/icon-money-bag-soles-r.svg",
                     width: 10,
                   }}
                   variant="white"
@@ -49,7 +49,7 @@ export const NavBar = () => {
                   title="Banca por Internet"
                   className="h-[40px] font-semibold text-sm"
                   icon={{
-                    name: "/img/icons/icon-candado.svg",
+                    name: "./img/icons/icon-candado.svg",
                   }}
                 />
               </li>

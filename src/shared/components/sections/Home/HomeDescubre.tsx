@@ -97,7 +97,7 @@ export const HomeDescubre = ({ referencia }: IProps) => {
               <div>
                 <div className="text-right">
                   <img
-                    src="/img/home/home-descubre.svg"
+                    src="./img/home/home-descubre.svg"
                     alt="Bcp"
                     className="inline-block"
                   />
