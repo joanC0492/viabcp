@@ -2,7 +2,7 @@ import { ButtonBcp } from "../../UI";
 
 export const HomeBancaMovil = () => {
   return (
-    <section className="bg-[url('./img/home/banner-pre-footer.png')] bg-cover bg-no-repeat bg-center h-[460px] pt-32">
+    <section className="bg-[url(https://www.viabcp.com/wcm/connect/890b04fd-700d-4f4f-929b-ca185735a8b1/bannerd.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-890b04fd-700d-4f4f-929b-ca185735a8b1-osz-Fdn)] bg-cover bg-no-repeat bg-center h-[460px] pt-32">
       <div className="container h-full">
         <div className="grid grid-cols-12 h-full">
           <div className="col-span-6 self-end pb-10">
@@ -20,7 +20,11 @@ export const HomeBancaMovil = () => {
             </div>
           </div>
           <div className="col-span-6 relative">
-            <img src="./img/home/celular-app.png" alt="App" className="absolute left-1/2 bottom-0 -translate-x-1/2"/>
+            <img
+              src="./img/home/celular-app.png"
+              alt="App"
+              className="absolute left-1/2 bottom-0 -translate-x-1/2"
+            />
           </div>
         </div>
       </div>
