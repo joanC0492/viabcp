@@ -24,8 +24,8 @@ export const Footer = () => {
           </Tooltip>
         </div>
 
-        <div className="flex">
-          <div className="flex-wrap flex-grow flex-shrink-0 basis-0">
+        <div className="flex flex-wrap lg:flex-nowrap gap-4 lg:gap-0">
+          <div className="flex-wrap flex-grow-0 basis-auto lg:flex-grow flex-shrink-0 lg:basis-0 w-full">
             <p className="text-xl">{footerRoutes[0].title}</p>
             <ul className="text-bcp-gray-1/75 mt-4">
               {footerRoutes[0].links.map(({ name, url }, i) => (
@@ -34,7 +34,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex-wrap flex-grow flex-shrink-0 basis-0">
+          <div className="flex-wrap flex-grow-0 basis-auto lg:flex-grow flex-shrink-0 lg:basis-0 w-full">
             <div>
               <p className="text-xl">{footerRoutes[1].title}</p>
               <ul className="text-bcp-gray-1/75 mt-4">
@@ -54,7 +54,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex-wrap flex-grow flex-shrink-0 basis-0">
+          <div className="flex-wrap flex-grow-0 basis-auto lg:flex-grow flex-shrink-0 lg:basis-0 w-full">
             <div>
               <p className="text-xl">Contáctanos</p>
               <ul className="mt-4">
@@ -69,10 +69,19 @@ export const Footer = () => {
               </ul>
               <div>
                 <p className="text-xl">Descarga Banca Móvil</p>
-                <div className="flex gap-2 mt-5">
-                  <ButtonBcp title="App Store" className="h-10" />
-                  <ButtonBcp title="Google Play" className="h-10" />
-                  <ButtonBcp title="App Gallery" className="h-10" />
+                <div className="flex gap-2 mt-5 flex-col 2xl:flex-row">
+                  <ButtonBcp
+                    title="App Store"
+                    className="h-10 w-max min-w-[140.2px]"
+                  />
+                  <ButtonBcp
+                    title="Google Play"
+                    className="h-10 w-max min-w-[140.2px]"
+                  />
+                  <ButtonBcp
+                    title="App Gallery"
+                    className="h-10 w-max min-w-[140.2px]"
+                  />
                 </div>
               </div>
             </div>
@@ -84,16 +93,19 @@ export const Footer = () => {
         </div>
 
         <hr className="my-10" />
-        <div className="pb-10 flex items-center gap-12">
+        <div className="pb-10 flex flex-wrap lg:flex-nowrap items-center lg:gap-x-12 gap-y-5 lg:gap-y-0">
+
           <div>
             <img src="./img/home/bcp-dark.svg" alt="" />
           </div>
+
           <div>
             <p className="text-bcp-gray-1/75 text-xs">
               © 2020 BCP | Todos los derechos reservados. Sede Central,
               Centenario 156, La Molina 15026, Lima, Perú.
             </p>
           </div>
+
           <div className="ml-auto">
             <ul className="flex gap-4 [&_img]:h-16 [&_img]:w-auto">
               <li>

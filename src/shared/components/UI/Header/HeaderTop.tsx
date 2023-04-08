@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const HeaderTop = () => {
   return (
-    <div className="bg-bcp-blue-3">
+    <div className="bg-bcp-blue-3 hidden xl:block">
       <div className="container">
         <ul className="flex gap-4">
           {routes.map(({ id, name, path }, i) => (

@@ -40,32 +40,45 @@ export const HomeCarrouselNovedades = () => {
           <SwiperSlide key={id}>
             <div className="text-white">
               <div className="container">
-                <div className="grid grid-cols-12 items-center h-[474px]">
-                  <div className="col-span-6 relative order-2">
-                    <div className="pt-16 max-w-[560px]">
-                      <p className="text-bcp-gray-4 flex gap-2">
+                <div className="grid grid-cols-12 items-center lg:h-[474px] text-center lg:text-left">
+                  <div className="col-span-12 lg:col-span-6 relative lg:order-2">
+                    <div className="pt-16 max-w-full lg:max-w-[560px]">
+                      <div className="text-bcp-gray-4 flex gap-2 justify-center lg:justify-start">
                         <img src="./img/icons/cancel-green.svg" alt="Icon" />
                         <span>{promocion}</span>
-                      </p>
-                      <p className="text-[40px] leading-[1.1] mb-3 text-bcp-blue-2 mt-5">
+                      </div>
+                      <p className="text-[28px] lg:text-[40px] leading-[1.1] mb-3 text-bcp-blue-2 mt-5">
                         {title}
                       </p>
-                      <p className="text-lg mb-8 text-bcp-gray-1 font-light">
+                      <p className="hidden lg:block text-lg mb-8 text-bcp-gray-1 font-light">
                         {text}
                       </p>
-                      <ButtonBcp title={cta} />
+                      <div className="hidden lg:block">
+                        <ButtonBcp title={cta} />
+                      </div>
                     </div>
                   </div>
-                  <div className="col-span-6 relative order-1">
+
+                  <div className="col-span-12 lg:col-span-6 relative lg:order-1">
                     <div className="grid h-full">
                       <div className="self-end">
                         <figure className="mx-auto relative">
                           <img
                             src={img}
                             alt={title}
-                            className="w-full max-w-[475px]"
+                            className="w-full object-contain h-80 lg:h-auto lg:max-w-[475px]"
                           />
                         </figure>
+                      </div>
+                      <div className="lg:hidden">
+                        <div>
+                          <p className="text-lg mb-8 text-bcp-gray-1 font-light">
+                            {text}
+                          </p>
+                        </div>
+                        <div>
+                          <ButtonBcp title={cta} />
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -28,13 +28,20 @@ export const HomeDigital = () => {
       <div className="container">
         <div className="text-center">
           <p className="text-xs text-white/50">SOLUCIONES DIGITALES</p>
-          <p className="text-[40px] text-white">
+          <p className="text-[28px] md:text-[40px] text-white">
             Conviértete en un cliente digital
           </p>
+          <div className="md:hidden">
+            <img
+              src={homeClienteDigital[0].img}
+              alt="Imagen"
+              className="max-w-full"
+            />
+          </div>
         </div>
         <div className="pt-10">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-6">
+          <div className="grid grid-cols-12 gap-x-0 gap-y-8 md:gap-8">
+            <div className="col-span-12 md:col-span-6">
               <div className="relative">
                 {homeClienteDigital.map(
                   ({ id, tag, icon, title, text, cta, img }, i) => (
@@ -46,7 +53,7 @@ export const HomeDigital = () => {
                       }`}>
                       <hr className="opacity-25" />
                       <div
-                        className="text-white py-10 cursor-pointer transition-all duration-300 group-[.no-active]:opacity-50"
+                        className="text-white py-10 cursor-pointer transition-all duration-300 group-[.no-active]:opacity-50 text-center md:text-left"
                         onMouseEnter={() => showImage(i)}
                         onMouseLeave={hiddenImage}>
                         {!!tag && (
@@ -54,7 +61,7 @@ export const HomeDigital = () => {
                             <p>{tag}</p>
                           </div>
                         )}
-                        <div className="flex gap-4 items-center pb-5">
+                        <div className="flex-col md:flex-row flex gap-2 md:gap-4 items-center pb-5">
                           <img src={icon} alt={title} width={24} />
                           <p className="text-2xl">{title}</p>
                         </div>
@@ -70,7 +77,7 @@ export const HomeDigital = () => {
                         src={img}
                         alt={title}
                         data-img-main
-                        className={`opacity-0 absolute top-8 left-full pl-[25%] transition-all duration-300 group-[.is-active]:opacity-100`}
+                        className={`opacity-0 absolute top-8 left-full pl-[25%] transition-all duration-300 group-[.is-active]:opacity-100 hidden md:block`}
                       />
                     </div>
                   )

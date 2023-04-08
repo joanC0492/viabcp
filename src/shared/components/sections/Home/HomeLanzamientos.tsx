@@ -12,7 +12,7 @@ export const HomeLanzamientos = () => {
   }, []);
 
   return (
-    <section className="py-16">
+    <section className="pt-16 lg:py-16">
       <div className="container">
         <div className="text-center pb-12">
           <p className="text-xs text-bcp-gray-1/50">LANZAMIENTO</p>
@@ -22,12 +22,16 @@ export const HomeLanzamientos = () => {
         </div>
         <div className="relative">
           {homeLanzamientos.map(({ id, img, title, text, cta }) => (
-            <div className="relative" data-aos="fade-up" key={id}>
-              <div className="grid grid-cols-12 gap-20 py-16">
-                <div className="col-span-6">
-                  <img src={img} alt={text} />
+            <div className="mb-2 md:mb-0 shadow-2xl md:shadow-none relative" data-aos="fade-up" key={id}>
+              <div className="grid grid-cols-12 gap-y-3 gap-x-0 md:gap-8 lg:gap-20 py-8 px-4 md:px-0 md:py-16">
+                <div className="col-span-12 md:col-span-6 order-2 md:order-1">
+                  <img
+                    src={img}
+                    alt={text}
+                    className="max-w-full md:max-w-max"
+                  />
                 </div>
-                <div className="col-span-6">
+                <div className="col-span-12 md:col-span-6 order-1 md:order-2">
                   <p className="text-[32px] text-bcp-blue-2 leading-10">
                     {title}
                   </p>
@@ -37,7 +41,8 @@ export const HomeLanzamientos = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute top-0 left-1/2 -translate-x-1/2">
+              {/* Point */}
+              <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2">
                 <span className="rounded-full bg-bcp-orange h-4 w-4 block">
                   &nbsp;
                 </span>
@@ -45,7 +50,7 @@ export const HomeLanzamientos = () => {
             </div>
           ))}
           {/* Line */}
-          <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2">
+          <div className="hidden md:block absolute top-0 bottom-0 left-1/2 -translate-x-1/2">
             <span className="bg-bcp-gray-4/50 h-full w-[1px] block">
               &nbsp;
             </span>

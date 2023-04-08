@@ -12,7 +12,7 @@ export const CardViaBcp = ({ id, img, title, cintillo }: ICardViaBcp) => {
         </div>
       </CardContent>
       <CardActions>
-        <p className="text-lg text-bcp-blue-2 leading-6 min-h-[48px]">
+        <p className="text-base leading-5 md:text-lg text-bcp-blue-2 md:leading-6 min-h-[48px]">
           {title}
         </p>
       </CardActions>

@@ -48,24 +48,27 @@ export const HomeCarrousel = () => {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper bg-bcp-blue-4"
+        className="mySwiper bg-bcp-blue-4 h-[360px] lg:h-[400px] xl:h-min"
         style={{ clipPath: "ellipse(80% 100% at 40% 0%" }}>
         {data.map(({ id, title, subtitle, cta, img }) => (
           <SwiperSlide key={id}>
             <div className="text-white">
               <div className="container">
-                <div className="grid grid-cols-12 h-[474px]">
-                  <div className="col-span-6 relative">
-                    <div className="pt-16 max-w-[560px]">
-                      <p className="text-[52px] leading-[1.1] mb-3">{title}</p>
-                      <p className="text-lg mb-8">{subtitle}</p>
-                      <ButtonBcp title={cta} />
+                <div className="grid grid-cols-12 h-[360px] lg:h-[474px] relative">
+                  <div className="col-span-10 md:col-span-6 relative">
+                    <div className="pt-8 lg:pt-16 max-w-[560px]">
+                      <p className="text-[28px] md:text-[32px] lg:text-[40px] xl:text-[52px] leading-[1.1] mb-3">
+                        {title}
+                      </p>
+                      <p className="text-sm md:text-base lg:text-lg mb-6 md:mb-8">{subtitle}</p>
+                      <ButtonBcp title={cta} className="!h-[44px] md:!h-[48px]"/>
                     </div>
                   </div>
-                  <div className="col-span-6 relative">
+
+                  <div className="col-span-2 md:col-span-6 relative hidden md:block">
                     <div className="grid h-full">
                       <div className="self-end">
-                        <figure className="max-w-[559px] h-[436px] mx-auto relative">
+                        <figure className="max-w-[559px] h-[265px] lg:h-[436px] mx-auto relative">
                           <img
                             src={img}
                             alt={title}
@@ -74,6 +77,9 @@ export const HomeCarrousel = () => {
                         </figure>
                       </div>
                     </div>
+                  </div>
+                  <div className="md:hidden absolute right-0 bottom-0">
+                    <img src={img} alt={title} className="max-w-[200px]" />
                   </div>
                 </div>
               </div>
